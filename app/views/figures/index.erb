@@ -4,7 +4,11 @@
     <title>Figures</title>
   </head>
   <body>
-    <h1>List of Figures</h1>
-  
+    <ul>
+      <h1>List of Figures</h1>
+      <% @figures.each do |figure| %>
+        <li><%= figure.name %></li>
+      <% end %>
+    </ul>
   </body>
 </html>
