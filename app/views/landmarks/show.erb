@@ -6,13 +6,9 @@
   <body>
     <h1><a href="/landmarks/<%=@landmark.id%>"><%=@landmark.name%></a></h1>
     <h3>Name</h3>
-      <% @landmarks.each do |landmark| %>
-        <p><%=landmark.name%></p>
-      <% end %>
+      <p><% @landmarks.name%></p>
       <br>
     <h3>Year Completed</h3>
-      <% @landmarks.each do |landmark| %>
-        <p><%=landmark.year_completed%></p>
-      <% end %>
+      <p><% @landmarks.year_completed%></p>
   </body>
 </html>
