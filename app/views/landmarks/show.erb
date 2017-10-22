@@ -5,17 +5,6 @@
   </head>
   <body>
     <h1>Name: <a href="/landmarks/<%=@landmark.id%>"><%=@landmark.name%></a></h1>
-    <p><% @landmark.year_completed%></p>
+    <p><%=@landmark.year_completed%></p>
   </body>
 </html>
-
-
-<h1>Create a New Landmark</h1>
-<form method="post" action="/landmarks">
-  <label>Name: </label>
-  <input type="text" id="landmark_name" name="landmark[name]">
-  <br><br>
-
-  <label>Year Completed: </label>
-  <input type="text" id="landmark_year_completed" name="landmark[year_completed]">
-  <br><br>
