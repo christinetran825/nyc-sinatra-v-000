@@ -4,5 +4,11 @@
     <title></title>
   </head>
   <body>
+    <ul>
+      <h1>List of Landmarks</h1>
+      <% @landmarks.each do |landmark| %>
+        <li><%= landmark.name %> | <%= landmark.year_completed %>  </li>
+      <% end %>
+    </ul>
   </body>
 </html>

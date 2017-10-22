@@ -4,12 +4,15 @@
     <title>Figures</title>
   </head>
   <body>
-    
     <h1><a href="/figures/<%=@figure.id%>"><%=@figure.name%></a></h1>
-    <ul>
-      <% @figure.landmarks.each do |landmark| %>
-        <li><%=landmark.name%></li>
+    <h3>Title</h3>
+      <% @figure.titles.each do |title| %>
+        <p><%=title.name%></p>
       <% end %>
-    </ul>
+      <br>
+    <h3>Landmark</h3>
+      <% @figure.landmarks.each do |landmark| %>
+        <p><%=landmark.name%></p>
+      <% end %>
   </body>
 </html>
